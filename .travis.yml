@@ -14,10 +14,6 @@ jobs:
       env: SNAPCRAFT_PROVIDER=lxd
     - arch: arm64
       env: SNAPCRAFT_PROVIDER="host --destructive-mode"
-    - arch: ppc64le
-      env: SNAPCRAFT_PROVIDER="host --destructive-mode"
-    - arch: s390x
-      env: SNAPCRAFT_PROVIDER="host --destructive-mode"
 install:
   - sudo apt-get remove -y --purge lxd lxd-client
   - sudo snap install lxd
